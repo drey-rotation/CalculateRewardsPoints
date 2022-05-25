@@ -14,8 +14,14 @@ Simulate an asynchronous API call to fetch data
 Make up a data set to best demonstrate your solution
 Check solution into GitHub
 
+## Here is an example output when running the app:
+
+![main screen](/main-screen.png)
 
 
+## Here is a view into the input JSON for running tests and simulating back-end calls:
+
+![main screen](/all-transactions.json.png)
 
 
 # Getting Started with Create React App
