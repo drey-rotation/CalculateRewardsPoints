@@ -6,7 +6,27 @@ A customer receives 2 points for every dollar spent over $100 in each transactio
 (e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points).
  
 Given a record of every transaction during a three month period, calculate the reward points earned for each customer per month and total.
- 
+
+## Notes:
+
+The instructions say that "there should be 1 point for every dollar spent over $50 in each transaction". Seems like the point total for a $120 transaction should be 2X$20 + 1x$70.
+
+In any case, the simple algorithm is located in /src/components/CalculatePoints.js and can be tweaked when necessary:
+
+```
+function CalculatePoints(transactionAmount) { 
+  var points = 0;
+  if (transactionAmount <= 50) return points;
+
+  points = (transactionAmount - 50);  // every dollar spent over $50
+  if (transactionAmount > 100) {
+    points += (transactionAmount - 100) * 2; // every dollar spent over $100*2
+  }
+  
+  return Math.floor(points);
+}
+```
+
 ## Requirements
 
 Use React JS (do not use TypeScript)

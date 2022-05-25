@@ -1,4 +1,3 @@
-import FetchTransactions from "./FetchTransactions";
 import CalculatePoints from './CalculatePoints';
 
 function ProcessAndParse(transactionData) {
@@ -73,36 +72,6 @@ function ParseByCustomer(monthNumber, monthData) {
 
   return retVal;
 }
-
-function ParseByCustomer1(monthNumber, monthData) {
-  let uniqueCustomerIds = getUniqueCustomerIds(monthData);
-  let retVal = [];
-
-  // Step3: For each month and For each unique customer, 
-  //  add up all their transactions for the month
-  //  compute the number of reward points for the month   
-  for (var i = 0; i < uniqueCustomerIds.length; i++) {
-    // customerSpentAmounts is an array containing all transactions from a specific
-    // customer
-    let customerId = uniqueCustomerIds[i].CustomerId;
-    let customerSpentAmounts = monthData.filter(x => x.CustomerId === customerId);
-    let totalSpentByCustomer = 0;
-    let points = 0;
-    for (var j = 0; j < customerSpentAmounts.length; j++) {
-      totalSpentByCustomer += customerSpentAmounts[j].AmountSpent;
-      points += CalculatePoints(customerSpentAmounts[j].AmountSpent);
-    }
-
-    monthData[i].points = points;
-
-    // let points = CalculatePoints(totalSpent); //3, customerId, customerSpentAmounts);
-    console.log(`Month: ${monthNumber} CustomerId: ${customerId} TotalSpent: ${totalSpentByCustomer}, Points: ${points}`);
-
-
-    // retVal.push( { customerId: customerId, totalSpent: totalSpentByCustomer, points: points})
-  }
-}
-
 
 function getUniqueCustomerIds(secondMonth) {
   const keys1 = ['CustomerId'];

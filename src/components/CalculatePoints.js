@@ -5,10 +5,14 @@
 
 
 function CalculatePoints(transactionAmount) { 
-  if (transactionAmount <= 50) return 0;
+  var points = 0;
+  if (transactionAmount <= 50) return points;
 
-  var points = (transactionAmount % 100) * 2;
-  points += (transactionAmount - 50);
+  points = (transactionAmount - 50);  // every dollar spent over $50
+  if (transactionAmount > 100) {
+    points += (transactionAmount - 100) * 2; // every dollar spent over $100*2
+  }
+  
   return Math.floor(points);
 }
 
