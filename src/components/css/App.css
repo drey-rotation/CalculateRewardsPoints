@@ -1,0 +1,19 @@
+.center {
+  margin: auto;
+  width: 50%;
+  border: 1px solid green;
+  padding: 20px 40px 40px 20px;
+}
+
+.resultsTable {
+  margin-top: 50px;
+}
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}

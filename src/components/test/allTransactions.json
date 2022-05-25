@@ -1,0 +1,86 @@
+[
+  {
+    "TransactionId": "0001",
+    "CustomerId": 1,
+    "Month": 1,
+    "AmountSpent": 120.0
+  },
+  {
+    "TransactionId": "0002",
+    "CustomerId": 2,
+    "Month": 1,
+    "AmountSpent": 1.23
+  },
+  {
+    "TransactionId": "0003",
+    "CustomerId": 4,
+    "Month": 3,
+    "AmountSpent": 1.23
+  },
+  {
+    "TransactionId": "0004",
+    "CustomerId": 3,
+    "Month": 1,
+    "AmountSpent": 104.23
+  },
+    {
+      "TransactionId": "0005",
+      "CustomerId": 1,
+      "Month": 2,
+      "AmountSpent": 214.23
+    },
+    {
+      "TransactionId": "0006",
+      "CustomerId": 2,
+      "Month": 2,
+      "AmountSpent": 1.23
+    },
+    {
+      "TransactionId": "0007",
+      "CustomerId": 3,
+      "Month": 2,
+      "AmountSpent": 104.23
+    },
+    {
+      "TransactionId": "0008",
+      "CustomerId": 1,
+      "Month": 3,
+      "AmountSpent": 214.23
+    },
+    {
+      "TransactionId": "0009",
+      "CustomerId": 2,
+      "Month": 3,
+      "AmountSpent": 1.23
+    },
+    {
+      "TransactionId": "0010",
+      "CustomerId": 3,
+      "Month": 3,
+      "AmountSpent": 104.23
+    },
+    {
+      "TransactionId": "0011",
+      "CustomerId": 9,
+      "Month": 2,
+      "AmountSpent": 1245.89
+    },
+    {
+      "TransactionId": "0012",
+      "CustomerId": 2,
+      "Month": 3,
+      "AmountSpent": 1.23
+    },
+    {
+      "TransactionId": "0013",
+      "CustomerId": 6,
+      "Month": 1,
+      "AmountSpent": 349.23
+    },
+    {
+      "TransactionId": "0014",
+      "CustomerId": 1,
+      "Month": 3,
+      "AmountSpent": 65.23
+    }
+]
